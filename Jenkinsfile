@@ -6,7 +6,7 @@ pipeline {
  }
  agent any
  stages {
- stage(‘Cloning git’) {
+ stage(‘Fetch repository’) {
  steps {
  git([url: ‘https://github.com/009Shreyash/DevopsSampleRepo.git', branch: ‘main’])
  }
